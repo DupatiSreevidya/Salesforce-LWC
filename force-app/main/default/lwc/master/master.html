@@ -1,0 +1,10 @@
+<template>
+    <lightning-card title="CourseDetalis">
+        <lightning-button label="click here" name="addCourse" onclick={addChild}></lightning-button>
+    <template for:each={courseInfo} for:item="course" > 
+        <p key={course}>
+            <c-detail course-details={course}></c-detail>
+        </p>
+    </template>
+</lightning-card>
+    </template>
