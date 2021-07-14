@@ -1,0 +1,9 @@
+<template>
+    
+   <lightning-input label="Height" name="heightvalue" onchange={dataHandler} ></lightning-input>
+   <lightning-input label="Weight" name="weightvalue" onchange={dataHandler}></lightning-input>
+
+   <lightning-button label="Calculate" onclick={onCal}></lightning-button>
+   <p>BMI is : {result}</p>
+     
+   </template>
