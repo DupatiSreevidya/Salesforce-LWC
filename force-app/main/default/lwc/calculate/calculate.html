@@ -1,0 +1,12 @@
+<template>
+    <lightning-card title="Calculator">
+    <lightning-input label="First Value" name="firstvalue" onchange={dataHandler}></lightning-input>
+    <lightning-input label="Second Value" name="secondvalue" onchange={dataHandler}></lightning-input>
+
+    <lightning-button label="Add" onclick={addHandler}></lightning-button>
+    <lightning-button label="Sub" onclick={subHandler}></lightning-button>
+    <lightning-button label="Mul" onclick={mulHandler}></lightning-button>
+    <lightning-button label="Div" onclick={divHandler}></lightning-button>
+    <p>The output is:{result}</p>
+</lightning-card>
+</template>
