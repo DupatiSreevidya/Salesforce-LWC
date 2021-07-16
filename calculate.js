@@ -14,6 +14,7 @@ export default class Calculate extends LightningElement {
         }
     };
     addHandler(){
+        console.log('in addhandler');
         var input1=this.firstValue;
         var input2=this.secondValue;
         this.result=parseInt(input1)+parseInt(input2);
