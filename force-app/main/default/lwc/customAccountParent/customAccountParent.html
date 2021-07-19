@@ -1,0 +1,15 @@
+<template>
+  <lightning-layout>
+      <lightning-tile>
+      <lightning-card title="New Account">
+          <lightning-layout-item><c-custom-account-create onsampledemo={handlechange} ></c-custom-account-create></lightning-layout-item>
+          <lightning-layout-item><c-address-information onaddressevent={handlechange}></c-address-information></lightning-layout-item>
+          <lightning-layout-item><c-additional-info onadditionevent={addChange}></c-additional-info></lightning-layout-item>
+          <lightning-button label="cancel"></lightning-button>
+          <lightning-button label="Save" onclick={createAccount}>
+            
+          </lightning-button>
+      </lightning-card>
+    </lightning-tile>
+  </lightning-layout>  
+</template>
