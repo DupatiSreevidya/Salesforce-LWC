@@ -3,5 +3,6 @@ public with sharing class ApexManager {
     
     public static list<Account> getAccounts(){
         return [select id,name,email,phone,website from account limit 10];
+        [select id,name from account];
 }
 }
